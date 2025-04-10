@@ -23,12 +23,24 @@
       padding: 30px 60px;
       border-bottom: 1px solid #333;
     }
+    .logo-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
     .logo-text {
       font-family: 'Trajan Pro', serif;
-      font-size: 3.2rem;
+      font-size: 4.2rem;
       font-weight: normal;
       color: white;
-      letter-spacing: 3px;
+      letter-spacing: 4px;
+      margin-bottom: 5px;
+    }
+    .logo-subtext {
+      font-family: 'Georgia', serif;
+      font-size: 1.1rem;
+      color: #ccc;
+      letter-spacing: 1px;
     }
     .lang-switch {
       display: flex;
@@ -104,7 +116,10 @@
 </head>
 <body>
   <header>
-    <div class="logo-text">SCC</div>
+    <div class="logo-container">
+      <div class="logo-text">SCC</div>
+      <div class="logo-subtext">Sentinel Capital & Compliance</div>
+    </div>
     <div class="lang-switch">
       <button>English</button>
       <button>العربية</button>
