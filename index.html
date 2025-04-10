@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sentinel Capital & Compliance</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #000;
+      color: #fff;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 60px;
+      border-bottom: 1px solid #333;
+    }
+    .logo-text {
+      font-family: 'Georgia', serif;
+      font-size: 2.8rem;
+      font-weight: bold;
+      color: white;
+      letter-spacing: 2px;
+    }
+    .lang-switch {
+      display: flex;
+      gap: 12px;
+    }
+    .lang-switch button {
+      background: none;
+      border: 1px solid #fff;
+      color: #fff;
+      padding: 8px 14px;
+      cursor: pointer;
+      font-size: 0.95rem;
+      font-family: 'Georgia', serif;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .lang-switch button:hover {
+      background-color: #fff;
+      color: #000;
+    }
+    section {
+      padding: 80px 60px;
+      max-width: 960px;
+      margin: auto;
+    }
+    section > * {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    section.visible > * {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    h1, h2 {
+      font-weight: 600;
+    }
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 16px;
+    }
+    h2 {
+      font-size: 1.6rem;
+      margin-top: 50px;
+    }
+    p {
+      line-height: 1.8;
+      font-size: 1.15rem;
+      margin-bottom: 25px;
+    }
+    footer {
+      padding: 30px 60px;
+      border-top: 1px solid #333;
+      text-align: center;
+      font-size: 0.95rem;
+      color: #aaa;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const section = document.querySelector("section");
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            section.classList.add("visible");
+            observer.disconnect();
+          }
+        },
+        { threshold: 0.1 }
+      );
+      observer.observe(section);
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <div class="logo-text">SCC</div>
+    <div class="lang-switch">
+      <button>English</button>
+      <button>العربية</button>
+      <button>中文</button>
+      <button>Español</button>
+      <button>کوردی</button>
+      <button>Русский</button>
+    </div>
+  </header>
+  <section>
+    <h1>Sentinel Capital & Compliance</h1>
+    <p>
+      Sentinel Capital & Compliance is a U.S.-based strategic compliance consultancy that acquires long-term equity stakes in distressed international financial institutions — acting as a direct intermediary between these institutions and U.S. regulatory authorities including OFAC and the Department of the Treasury. Our model is rooted in institutional reform and regulatory rehabilitation, structured for both restoration and resilience.
+    </p>
+
+    <p>
+      We operate with embedded accountability, assuming a transformative position within each partner institution. Our equity participation ensures alignment of long-term interests while reinforcing the structural and ethical overhauls necessary to regain standing with U.S. and global financial networks. Our operations reflect a distinctly American standard — one grounded in transparency, governance, and international legal alignment.
+    </p>
+
+    <h2>Restoring USD Access</h2>
+    <p>
+      A financial institution's exclusion from U.S. dollar clearing mechanisms is more than a regulatory inconvenience — it is an existential threat. USD access is fundamental to correspondent banking, international settlement, trade finance, sovereign transactions, and foreign direct investment. Sentinel brings back this capability through methodical remediation, trusted reporting, and strategic advocacy to the appropriate regulatory bodies.
+    </p>
+
+    <h2>Strategic Regulatory Mediation</h2>
+    <p>
+      We act as formal intermediaries to OFAC and corresponding U.S. agencies. Through direct dialogue, ongoing compliance assessments, and detailed reporting packages, we represent our partner banks in presenting a clear and defensible case for reintegration. Our audits and deliverables are not only technical but narrative-driven — designed to walk regulators through every facet of the bank's cleanup process and compliance commitment.
+    </p>
+
+    <h2>Full-Spectrum Reform</h2>
+    <p>
+      From the executive board to front-line client accounts, our reform process targets institutional culture, systemic risk points, and inherited liabilities. We implement global-standard Anti-Money Laundering (AML) practices, Know Your Customer (KYC) due diligence frameworks, and FATF-compliant operating procedures. Internal investigations, legacy account reviews, and corrective personnel actions are critical to our model.
+    </p>
+
+    <h2>Trusted Third-Party Partnerships</h2>
+    <p>
+      We don’t work alone. Sentinel leverages the credibility of established U.S.-based AML firms, third-party compliance auditors, and legal counsel to produce reliable, external attestations of progress. These verifications serve as the foundation of our pitch to regulators — not only proving institutional cleanup, but providing a sustainable framework for future resilience.
+    </p>
+  </section>
+  <footer>
+    &copy; 2025 Sentinel Capital & Compliance. All Rights Reserved.
+  </footer>
+</body>
+</html>
