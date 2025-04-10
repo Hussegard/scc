@@ -6,9 +6,7 @@
   <title>Sentinel Capital & Compliance</title>
   <link href="https://fonts.googleapis.com/css2?family=Trajan+Pro&display=swap" rel="stylesheet">
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
       font-family: 'Georgia', serif;
@@ -47,16 +45,13 @@
       border-bottom: 1px solid #222;
       display: flex;
       gap: 30px;
-      font-family: 'Georgia', serif;
     }
     nav a {
       color: #ccc;
       text-decoration: none;
       font-size: 1rem;
     }
-    nav a:hover {
-      color: #fff;
-    }
+    nav a:hover { color: #fff; }
     .lang-switch {
       display: flex;
       gap: 12px;
@@ -79,15 +74,6 @@
       padding: 80px 60px;
       max-width: 960px;
       margin: auto;
-    }
-    section > * {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-    }
-    section.visible > * {
-      opacity: 1;
-      transform: translateY(0);
     }
     h1, h2 {
       font-weight: 600;
@@ -113,21 +99,6 @@
       color: #aaa;
     }
   </style>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const section = document.querySelector("section");
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) {
-            section.classList.add("visible");
-            observer.disconnect();
-          }
-        },
-        { threshold: 0.1 }
-      );
-      observer.observe(section);
-    });
-  </script>
 </head>
 <body>
   <header>
@@ -154,10 +125,8 @@
 
   <section>
     <h1>Sentinel Capital & Compliance</h1>
-    <p>
-      Sentinel Capital & Compliance is a U.S.-based strategic compliance consultancy that acquires long-term equity stakes in distressed international financial institutions — acting as a direct intermediary between these institutions and U.S. regulatory authorities including OFAC and the Department of the Treasury...
-    </p>
-    <!-- Additional full paragraph content omitted here for brevity -->
+    <p>Sentinel Capital & Compliance is a U.S.-based strategic compliance consultancy that acquires long-term equity stakes in distressed international financial institutions — acting as a direct intermediary between these institutions and U.S. regulatory authorities including OFAC and the Department of the Treasury.</p>
+    <p>We operate with embedded accountability... [content continues]</p>
   </section>
   <footer>
     &copy; 2025 Sentinel Capital & Compliance. All Rights Reserved.
